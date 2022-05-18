@@ -1,13 +1,283 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+html {
+    box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    background-color: #EBFDFD;
+    color: #002628;
+}
+
+section {
+    padding: 40px 0;
+}
+
+h1,
+h2,
+h3 {
+    padding: 0;
+    margin: 0;
+}
+
+p {
+    padding: 0;
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.container {
+    max-width: 1136px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.header {
+    background-color: #008B8B;
+    color: #ffffff;
+}
+
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 85px;
+}
+
+.header__logo {
+    margin-right: 7px;
+}
+
+.header__title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.header__cv-link {
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 20px;
+}
+
+.name-box {
+    display: flex;
+    align-items: center;
+    margin-left: -100px;
+    font-weight: 500;
+    letter-spacing: .5px;
+}
+
+.name-box__image {
+    border-radius: 50%;
+    margin: 0 10px;
+}
+
+.cards-list {
+    margin: -10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cards-list__item {
+    flex: 0 1 50%;
+    padding: 10px;
+}
+
+.card {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    border-radius: 3px;
+    background-color: #ffffff;
+    border: 1px solid #2B283A;
+    padding: 20px;
+    height: 555px;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 150%;
+    color: #2B283A;
+}
+
+.card__column:last-child {
+    flex-grow: 1;
+    width: 100%;
+}
+
+.card__info {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    flex-grow: 1;
+}
+
+.card__title {
+    margin: 15px 0;
+    display: block;
+}
+
+.card__subtitle {
+    font-weight: 500;
+    margin-bottom: 20px;
+    max-width: 500px;
+}
+
+.card__text {
+    margin-top: auto;
+    max-width: 500px;
+}
+
+.card a {
+    display: inline-block;
+    color: #00AAAD;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: .5px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.links {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card__links {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+
+/* ===== MEDIA =====*/
+
+@media (max-width: 1135px) {
+    section {
+        padding: 30px 0;
+    }
+
+    .container {
+        padding: 0 15px;
+    }
+
+    .cards-list {
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .cards-list__item {
+        padding: 0 0 15px 0;
+    }
+
+    .card {
+        flex-direction: row;
+        height: auto;
+        align-items: flex-start;
+        max-width: 100%;
+        padding: 15px;
+    }
+
+    .card__column:first-child {
+        flex: 0 0 500px;
+    }
+
+    .card__info {
+        flex-grow: 1;
+        margin-left: 10px;
+    }
+}
+
+@media (max-width: 860px) {
+    section {
+        padding: 20px 0;
+    }
+
+    .container {
+        padding: 0 10px;
+    }
+
+    .header__title {
+        font-size: 16px;
+        line-height: 18px;
+        width: 80px;
+    }
+
+    .name-box {
+        margin-left: -35px;
+    }
+
+    .name-box__title {
+        font-size: 16px;
+        line-height: 16px;
+        margin: 0 2px;
+    }
+
+    .name-box__image {
+        display: none;
+        margin: 0 5px;
+        width: 40px;
+    }
+
+    .header__cv-link {
+        font-size: 16px;
+        line-height: 18px;
+
+    }
+
+    .cards-list {
+        align-items: center;
+    }
+
+    .cards-list__item {
+        flex: 0 1 100%;
+    }
+
+    .card {
+        flex-direction: column;
+        padding: 10px;
+        width: 100%;
+    }
+
+    .card a {
+        font-size: 16px;
+        line-height: 18px;
+    }
+
+    .card__info {
+        margin-left: 0;
+    }
+
+    .card__title {
+        font-size: 18px;
+        line-height: 20px;
+    }
+
+    .card__subtitle {
+        font-size: 16px;
+        line-height: 18px;
+    }
 }
