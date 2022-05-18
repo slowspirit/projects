@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/static/css/main.32331170.css",
+    "main.js": "/static/js/main.c20a5097.js",
+    "static/media/Frontend-Rechitskiy_A.pdf": "/static/media/Frontend-Rechitskiy_A.27226c9722dbca04ed1c.pdf",
+    "index.html": "/index.html",
+    "main.32331170.css.map": "/static/css/main.32331170.css.map",
+    "main.c20a5097.js.map": "/static/js/main.c20a5097.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.32331170.css",
+    "static/js/main.c20a5097.js"
+  ]
+}
