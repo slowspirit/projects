@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/projects-list%20/static/css/main.32331170.css",
+    "main.css": "/projects-list%20/static/css/main.c6b44bb5.css",
     "main.js": "/projects-list%20/static/js/main.e93bba4d.js",
     "static/media/Frontend-Rechitskiy_A.pdf": "/projects-list%20/static/media/Frontend-Rechitskiy_A.27226c9722dbca04ed1c.pdf",
     "index.html": "/projects-list%20/index.html",
-    "main.32331170.css.map": "/projects-list%20/static/css/main.32331170.css.map",
+    "main.c6b44bb5.css.map": "/projects-list%20/static/css/main.c6b44bb5.css.map",
     "main.e93bba4d.js.map": "/projects-list%20/static/js/main.e93bba4d.js.map"
   },
   "entrypoints": [
-    "static/css/main.32331170.css",
+    "static/css/main.c6b44bb5.css",
     "static/js/main.e93bba4d.js"
   ]
 }
